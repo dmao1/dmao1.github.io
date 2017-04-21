@@ -48,10 +48,18 @@
 
         <!-- Nav Bar -->
         <div class="nav-bar">
+            <div id="logo">
+                <!-- <a href="#carousel-section"><img src="assets/img/paw.png" height="70px" width="100px"></a> -->
+                <a><img src="assets/img/paw.png" height="65px" width="100px"></a>
+            </div>
+
+            <div id="searchbar">
+                <input type="text" name="search" placeholder="Search For a Pupper..">
+            </div>
+
             <div id="button-container">
                 <button id="link">Login</button>
-                <button id="post">Post</button>
-                <button id="account">My Account</button>
+                <button id="post">Sign Up</button>
             </div>
         </div>
 
@@ -66,10 +74,18 @@
         <nav class = "sidebar-container">
             <!-- Question 1: Sidebar Code Here -->
             <ul>
-                <li class="sidebar-item">Home</li>
-                <li class="sidebar-item">Name</li>
-                <li class="sidebar-item">Major</li>
-                <li class="sidebar-item">Fact</li>
+                <li class="sidebar-item">
+                    <a href="#carousel-section">Home</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#host-section">Host</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#major-section">Rent</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#fact-section">Help</a>
+                </li>
             </ul>
             <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
         </nav>
@@ -82,33 +98,33 @@
                 <!-- Question 2: Carousel Code Here -->
                 <div id="carousel">
                     <div class="carousel-item">
-                        <div class="quote">
-                            "People seldom do what they believe in, they do what is convenient, and then repent."
-                            <div class="author">Bob Dylan</div>
+                        <div class="slide">
+                            <img src="assets/img/pup1.jpg" width="960">
+                            <!-- <div class="author">Bob Dylan</div> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="quote">
-                            "Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read."
-                            <div class="author">Groucho Marx</div>
+                        <div class="slide">
+                            <img src="assets/img/pup2.jpg" width="960">
+                            <!-- <div class="author">Groucho Marx</div> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="quote">
-                            "Coffee isn't my cup of tea."
-                            <div class="author">Samuel Goldwyn</div>
+                        <div class="slide">
+                            <img src="assets/img/pup3.jpg" width="960">
+                            <!-- <div class="author">Samuel Goldwyn</div> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="quote">
-                            "wubalubadubdub"
-                            <div class="author">Rick Sanchez</div>
+                        <div class="slide">
+                            <img src="assets/img/pup4.jpg" width="960">
+                            <!-- <div class="author">Rick Sanchez</div> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="quote">
-                            "They call me Jack"
-                            <div class="author">Samurai Jack</div>
+                        <div class="slide">
+                            <img src="assets/img/pup5.jpg" width="960">
+                            <!-- <div class="author">Samurai Jack</div> -->
                         </div>
                     </div>
                 </div>
@@ -122,9 +138,14 @@
                 </div>
             </section>
             <!-- Name Section -->
-            <section class = "section" id = "name-section">
+            <section class = "section" id = "host-section">
                 <div class = "text" id = "name-text">
                     I am Daniel
+                </div>
+                <div class = "host-icons">
+                    <div class="pig"><img src="assets/img/cash.png"></div>
+                    <div class="love"><img src="assets/img/heart.png"></div>
+                    <div class="travel"><img src="assets/img/travel.png"></div>
                 </div>
             </section>
             <!-- Major Section -->

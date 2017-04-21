@@ -10,16 +10,27 @@ $(document).ready(function() {
       $(".sidebar-container").removeClass("sidebar-active");
       $(".page-wrapper").removeClass("wrapper-active");
       $(".nav-bar").removeClass("nav-active");
+      $("#logo").removeClass("logo-active");
   } else {
       $("#sidebar-button").addClass("button-active");
       $(".sidebar-container").addClass("sidebar-active");
       $(".page-wrapper").addClass("wrapper-active"); 
-      $(".nav-bar").removeClass("nav-active");
+      $(".nav-bar").addClass("nav-active");
+      $("#logo").addClass("logo-active");
       setTimeout(function() {
         $('body').addClass('no-scroll');
         }, 300);
   }
   });
+
+  $("#logo").click(function(){
+    $("html, body").animate({
+      scrollTop: 0
+    }, 1000);
+    console.log("hello");
+
+  });
+
   // QUESTION 7
 
   //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
@@ -28,6 +39,8 @@ $(document).ready(function() {
       $("#sidebar-button").removeClass("button-active");
       $(".sidebar-container").removeClass("sidebar-active");
       $(".page-wrapper").removeClass("wrapper-active");
+      $(".nav-bar").removeClass("nav-active");
+      $("#logo").removeClass("logo-active");
   });
   // QUESTION 8
 

@@ -21,7 +21,16 @@
 	color: white;
 	padding: 15px 20px 15px 20px;
 }
+.sidebar-item a{
+	/*text-decoration: none;*/
+	list-style: none;
+	color: white;
+}
 /* QUESTION #4: PLACE CAROUSEL STYLES BELOW */
+#carousel-section {
+	background-image: url("bg1.jpg");
+}
+
 .carousel-container {
 	width: 960px;
 	margin: 0 auto;
@@ -41,6 +50,13 @@
 	height: 100%;
 	float: left;
 }
+/*img {
+    max-width: 100%;
+    max-height: 100%;
+}	*/
+/*.carousel-item .slide {
+	width: 960px;
+}*/
 
 /* QUESTION #5: PLACE "OTHER CSS" STYLES BELOW */
 .section {
@@ -48,7 +64,7 @@
 	height: 500px;
 	position: relative;
 }
-#name-section {
+#host-section {
 	background-color: #2bde73;
 }
 #major-section {
@@ -67,11 +83,12 @@ body, html {
 	width: 100%;
 	height: 100%;
 	min-width: 960px;
-	background-color: black;
+	/*background-color: #00EEEE;*/
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	font-family: Lato;
+	/*margin-top: 71px;*/
 }
 
 a {
@@ -150,6 +167,7 @@ a {
 	-webkit-transition: all .3s;
 	-moz-transition: all .3s;
 	transition: all .3s;
+	padding-top: 65px;
 }
 
 /* Styling for the carousel previous button */
@@ -186,8 +204,8 @@ a {
     background-color: transparent;
 }
 
-/* Styling for the quotes and text in each section */
-.quote, .text {
+/* Styling for the slides and text in each section */
+.slide, .text {
 	position: absolute;
 	font-size: 36px;
 	color: white;
@@ -199,7 +217,7 @@ a {
    	transform: translateX(-50%) translateY(-50%);
 }
 
-/* Styling for the author text in each quote */
+/* Styling for the author text in each slide */
 .author {
 	font-size: 12px;
 	font-weight: 700;
@@ -207,6 +225,8 @@ a {
 	text-transform: uppercase;
 	margin-top: 10px;
 	text-align: center;
+	color: black;
+	/*position: absolute;*/
 }
 
 /* jQuery Manipulation Classes */
@@ -215,10 +235,15 @@ a {
 	overflow: hidden;
 }
 
-.wrapper-active, .button-active, .nav-active {
+.wrapper-active, .button-active, .nav-active  {
 	-webkit-transform: translateX(280px);
 	-moz-transform: translateX(280px);
 	transform: translateX(280px);
+}
+.logo-active {
+	-webkit-transform: translateX(100px);
+	-moz-transform: translateX(100px);
+	transform: translateX(100px);
 }
 
 .sidebar-active {
@@ -324,6 +349,112 @@ color: white;
 	z-index: 99;
 	box-shadow: 0px 30px 40px rgba(0,0,0,.1);
 	display: inline-block;
+	/*margin:; 70.3px;*/
+}
+
+#logo {
+	/*position: relative;*/
+	position: relative;
+	display: inline-block;
+	left: 10%;
+	cursor: pointer;
+	padding-left: 17px;
+}
+
+#searchbar {
+	position: absolute;
+	display: inline-block;
+	padding-left: 50px;
+	padding-top: 10px;
+	left: 50%;
+	width: 500px;
+	-webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+   	transform: translateX(-50%);
+}
+input[name=search] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    display: inline-block;
+}
+
+input[name=search]:focus {
+    /*width: 100%;*/
+}
+
+.host-icons {
+	max-width: auto;
+	height: 200px;
+
+}
+
+.host-icons div {
+	margin: 0 auto;
+}
+
+#pig, #love, #travel {
+	width: 150px;
+	float: left;
+}
+
+.pig img {
+	height: 100px;
+	width: 100px;
+	
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.travel img {
+	height: 100px;
+	width: 100px;
+
+	border-radius: 50%;
+    border: 2px solid white;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.love img {
+	height: 100px;
+	width: 100px;
+
+	border-radius: 50%;
+    border: 2px solid white;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+@keyframes wiggle {
+   0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.pig.wiggle:hover {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+.pig.wiggle {
+  animation: none;
 }
 
 .footer {
