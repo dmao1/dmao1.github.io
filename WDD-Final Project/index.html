@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'> -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+        <script src = "assets/js/script.js"></script>
+    </head>
+    <body>
+
+        <!-- Modal Box -->
+        <div id="modal-container">
+            <div id="modal-overlay"></div>
+                <div id="modal-box">
+                    <!-- Q2: Your Content for Modal Box Here -->
+                    <div id="modal-header">Login</div>
+                    <div id="modal-content">
+                        <input type = "text" class = "username" placeholder = "Enter Username" />
+                        <input type = "text" class = "password" placeholder = "Enter Password" />
+                    </div>
+                    <div id="modal-footer">
+                        <div id= "submit">Submit</div>
+                        <div id= "cancel">Cancel</div>
+                    </div>
+                </div>
+        </div>
+        
+        <!-- Singlevisual -->
+        <!-- <div id="background">
+            <div id="background-overlay"></div>
+        </div>
+        <div id="hero">
+            <div id="link">Login</div>
+        </div> -->
+
+
+        
+        <!-- <button id="post">Post</button>
+        <button id="account">My Account</button> -->
+        
+
+
+
+        <!-- Nav Bar -->
+        <div class="nav-bar">
+            <div id="button-container">
+                <button id="link">Login</button>
+                <button id="post">Post</button>
+                <button id="account">My Account</button>
+            </div>
+        </div>
+
+        <!-- Sidebar Hamburger Icon -->
+        <div id = "sidebar-button">
+            <a id="nav-toggle">
+                <span></span>
+            </a>
+        </div>
+
+        <!-- Sidebar -->
+        <nav class = "sidebar-container">
+            <!-- Question 1: Sidebar Code Here -->
+            <ul>
+                <li class="sidebar-item">Home</li>
+                <li class="sidebar-item">Name</li>
+                <li class="sidebar-item">Major</li>
+                <li class="sidebar-item">Fact</li>
+            </ul>
+            <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
+        </nav>
+
+        <!-- Page Wrapper, Consisting of All the Sections -->
+        <div class = "page-wrapper">
+            <!-- Carousel Section -->
+            <section class = "section" id = "carousel-section"> 
+                <div class = "carousel-container">
+                <!-- Question 2: Carousel Code Here -->
+                <div id="carousel">
+                    <div class="carousel-item">
+                        <div class="quote">
+                            "People seldom do what they believe in, they do what is convenient, and then repent."
+                            <div class="author">Bob Dylan</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote">
+                            "Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read."
+                            <div class="author">Groucho Marx</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote">
+                            "Coffee isn't my cup of tea."
+                            <div class="author">Samuel Goldwyn</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote">
+                            "wubalubadubdub"
+                            <div class="author">Rick Sanchez</div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quote">
+                            "They call me Jack"
+                            <div class="author">Samurai Jack</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Question 2 Here (Use as many lines as needed, but don't add code below this point)-->
+                    <div id="carousel-prev">
+                        <img class="img-scaled" src="assets/img/arrowleft.png" />
+                    </div>
+                    <div id="carousel-next">
+                        <img class="img-scaled" src="assets/img/arrowright.png" />
+                    </div>
+                </div>
+            </section>
+            <!-- Name Section -->
+            <section class = "section" id = "name-section">
+                <div class = "text" id = "name-text">
+                    I am Daniel
+                </div>
+            </section>
+            <!-- Major Section -->
+            <section class = "section" id = "major-section">
+                <div class = "text" id = "major-text">
+                    I am majoring in Cognitive Science
+                </div>
+            </section>
+            <!-- Random Fact Section -->
+            <section class = "section" id = "fact-section">
+                <div class = "text" id = "fact-text">
+                    Fact: I really like good fight choreo in movies 
+                </div>
+            </section>
+        </div>
+         
+
+
+
+
+
+
+    </body>
+</html>
