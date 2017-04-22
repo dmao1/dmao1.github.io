@@ -81,11 +81,24 @@
 	font-family: 'Oswald', sans-serif;
 	font-size: 36px;
 	color: black;
-	position: absolute;
 	left: 0;
   	right: 0;
   	padding: 10px;
   	letter-spacing: 20px;
+}
+
+#header-container {
+	text-align: center;
+}
+
+#help-container {
+	width: 80%;
+    height: 80%;
+    margin-top: 72.5px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
 }
 
 .section {
@@ -103,8 +116,9 @@
 }
 #help-section {
 	background-color: #fff;
-	text-align: center;
+	/*text-align: center;*/
 }
+
 #fact-text {
 	color: black;
 }
@@ -234,19 +248,6 @@ a {
     opacity:0.8;
     background-color: transparent;
 }
-
-/* Styling for the slides and text in each section */
-/*.slide, .text {
-	position: absolute;
-	font-size: 36px;
-	color: white;
-	font-weight: 700;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-   	transform: translateX(-50%) translateY(-50%);
-}*/
 
 .slide {
 	position: absolute;
@@ -381,11 +382,9 @@ color: white;
 	z-index: 99;
 	box-shadow: 0px 30px 40px rgba(0,0,0,.1);
 	display: inline-block;
-	/*margin:; 70.3px;*/
 }
 
 #logo {
-	/*position: relative;*/
 	position: relative;
 	display: inline-block;
 	left: 10%;
@@ -394,26 +393,8 @@ color: white;
 	padding-top: 5px;
 }
 
-/*#logo img:hover {
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-	-webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}*/
-
-/*.pawani {
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
-	-webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-}*/
-
 .boneani {
 	-webkit-transition: -webkit-transform .4s ease-in-out;
-    /*transition: transform .4s ease-in-out;
-	-webkit-transform: translateX(100px);
-	-moz-transform: translateX(100px);
-	transform: translateX(100px);*/
 }
 
 #bone {
