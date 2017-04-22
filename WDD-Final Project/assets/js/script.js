@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  // QUESTION 6
-
   //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
   $("#sidebar-button").click(function() {
     if ($(".sidebar-container").hasClass("sidebar-active")) {
@@ -27,11 +25,8 @@ $(document).ready(function() {
     $("html, body").animate({
       scrollTop: 0
     }, 1000);
-    console.log("hello");
-
   });
 
-  // QUESTION 7
 
   //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
   $(".page-wrapper").click(function() {
@@ -42,7 +37,6 @@ $(document).ready(function() {
       $(".nav-bar").removeClass("nav-active");
       $("#logo").removeClass("logo-active");
   });
-  // QUESTION 8
 
   //Implement the "slide to left" when the user clicks on #carousel-next here
   $("#carousel-next").click(function() {
@@ -77,22 +71,9 @@ $(document).ready(function() {
     }
   });
 
-
-  //THIS IS NOT A REQUIRED QUESTION 
-  // EXTRA FOR EXPERTS 
-
-  // Implement a "smooth scroll" when the user clicks on the sidebar links here
-
-
-
-
-
   $("#modal-container").hide();
 
-
-
-
-  $("#link").click(function() {
+  $("#login").click(function() {
     $("#modal-container").show();
     setTimeout(function() {
         $('body').addClass('no-scroll');
@@ -109,10 +90,12 @@ $(document).ready(function() {
     $("body").removeClass("no-scroll");
   });
   
-  // Question 5
   // IMPLEMENT "HIDE MODAL" WHEN "CLICK ON MODAL OVERLAY" HERE
   $("#modal-overlay").click(function() {
     $("#modal-container").hide();
     $("body").removeClass("no-scroll");
   });
+
+
+  $("#modal-container").hide();
 });

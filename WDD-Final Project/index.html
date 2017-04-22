@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'> -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
         </script> 
@@ -21,7 +22,7 @@
                     <div id="modal-header">Login</div>
                     <div id="modal-content">
                         <input type = "text" class = "username" placeholder = "Enter Username" />
-                        <input type = "text" class = "password" placeholder = "Enter Password" />
+                        <input type = "text" class = "password" placeholder = "****************" />
                     </div>
                     <div id="modal-footer">
                         <div id= "submit">Submit</div>
@@ -46,11 +47,14 @@
 
 
 
+
+
+
         <!-- Nav Bar -->
         <div class="nav-bar">
             <div id="logo">
                 <!-- <a href="#carousel-section"><img src="assets/img/paw.png" height="70px" width="100px"></a> -->
-                <a><img src="assets/img/paw.png" height="65px" width="100px"></a>
+                <a><img src="assets/img/paw.png" height="55px" width="80px"></a>
             </div>
 
             <div id="searchbar">
@@ -58,8 +62,8 @@
             </div>
 
             <div id="button-container">
-                <button id="link">Login</button>
-                <button id="post">Sign Up</button>
+                <button id="login">Login</button>
+                <button id="signup">Sign Up</button>
             </div>
         </div>
 
@@ -81,10 +85,10 @@
                     <a href="#host-section">Host</a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#major-section">Rent</a>
+                    <a href="#rent-section">Rent</a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#fact-section">Help</a>
+                    <a href="#help-section">Help</a>
                 </li>
             </ul>
             <!-- End Question 1 Here (Use as many lines as needed, but don't add code below this point)-->
@@ -138,25 +142,59 @@
                 </div>
             </section>
             <!-- Name Section -->
-            <section class = "section" id = "host-section">
-                <div class = "text" id = "name-text">
-                    I am Daniel
-                </div>
-                <div class = "host-icons">
-                    <div class="pig"><img src="assets/img/cash.png"></div>
-                    <div class="love"><img src="assets/img/heart.png"></div>
-                    <div class="travel"><img src="assets/img/travel.png"></div>
+            <section class="section" id="host-section">
+                <div class="section-header">Hosting</div>
+                <div id="icon-container">
+                    <div class="icon" id="pig">
+                        <img src="assets/img/cash.png">
+                        <div class="info" id="pig-text">
+                            Earn extra cash from renting out some puppy play time!
+                        </div>
+
+                    </div>
+                    <div class="icon" id="love">
+                        <img src="assets/img/heart.png">
+                        <div class="info" id="love-text">
+                            Share the love of a pup to people in your area!
+                        </div>
+                    </div>
+                    <div class="icon" id="travel">
+                        <img src="assets/img/travel.png">
+                        <div class="info" id="travel-text">
+                            Have someone to care for your pup if you're away!   
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Major Section -->
-            <section class = "section" id = "major-section">
-                <div class = "text" id = "major-text">
-                    I am majoring in Cognitive Science
+            <section class="section" id="rent-section">
+                <div class="section-header">Renting</div>
+                <div id="icon-container2">
+                    <div class="icon" id="phone">
+                        <img src="assets/img/phone.png">
+                        <div class = "info" id = "phone-text">
+                            Earn extra cash from renting out some puppy play time!
+                        </div>
+
+                    </div>
+                    <div class="icon" id="choose">
+                        <img src="assets/img/choose.png">
+                        <div class="info" id="phone-text">
+                            Share the love of a pup to people in your area!
+                        </div>
+                    </div>
+                    <div class="icon" id="puplove">
+                        <img src="assets/img/puplove.png">
+                        <div class="info" id="puplove-text">
+                            Have someone to care for your pup if you're away!   
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Random Fact Section -->
-            <section class = "section" id = "fact-section">
-                <div class = "text" id = "fact-text">
+            <section class="section" id="help-section">
+                <div class="section-header">Help</div>
+                <div class="info" id ="">
                     Fact: I really like good fight choreo in movies 
                 </div>
             </section>
