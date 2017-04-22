@@ -1,6 +1,27 @@
 $(document).ready(function() {
 
   //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
+  
+
+
+  // $("#logo").hover(function(){
+  //   $("#bone").addClass("boneani");
+  //   $("#logo").addClass("pawani");
+  //   $("#logo").off("mouseenter mouseleave");
+  // });
+
+
+  $("#logo").on("mouseenter", function() {
+        $("#bone").show();
+        $("#bone").addClass("boneani");
+        // $("#paw").addClass("pawani");
+    }).on("mouseleave", function() {
+        $("#bone").hide();
+        $("#bone").removeClass("boneani");
+        // $("#paw").removeClass("pawani");
+    });
+  
+
   $("#sidebar-button").click(function() {
     if ($(".sidebar-container").hasClass("sidebar-active")) {
       $("body").removeClass("no-scroll");
@@ -8,13 +29,13 @@ $(document).ready(function() {
       $(".sidebar-container").removeClass("sidebar-active");
       $(".page-wrapper").removeClass("wrapper-active");
       $(".nav-bar").removeClass("nav-active");
-      $("#logo").removeClass("logo-active");
+      // $("#logo").removeClass("logo-active");
   } else {
       $("#sidebar-button").addClass("button-active");
       $(".sidebar-container").addClass("sidebar-active");
       $(".page-wrapper").addClass("wrapper-active"); 
       $(".nav-bar").addClass("nav-active");
-      $("#logo").addClass("logo-active");
+      // $("#logo").addClass("logo-active");
       setTimeout(function() {
         $('body').addClass('no-scroll');
         }, 300);
