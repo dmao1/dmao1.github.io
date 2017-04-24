@@ -100,6 +100,20 @@
     border: 1px solid black;
     border-radius: 25px;
     text-align: left;
+    text-align: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+#help-container .help {
+	padding-top: 20px;
+	font-size: 28px;
+	margin: 40px;
+}
+
+#footer {
+	padding-top: 100px;
+	float: center;
+	padding-bottom: 15px;	
 }
 
 .instructions {
@@ -279,12 +293,6 @@ a {
 	-moz-transform: translateX(280px);
 	transform: translateX(280px);
 }
-
-/*.logo-active {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
-}*/
 
 .sidebar-active {
 	-webkit-transform: translateX(0px);
