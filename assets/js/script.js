@@ -1,20 +1,24 @@
-$('.photoset-grid-lightbox').photosetGrid({
-  highresLinks: true,
-  rel: 'withhearts-gallery',
-  gutter: '2px',
 
-  onComplete: function(){
-    $('.photoset-grid-lightbox').attr('style', '');
-    $('.photoset-grid-lightbox a').colorbox({
-      photo: true,
-      scalePhotos: true,
-      maxHeight:'90%',
-      maxWidth:'90%'
-    });
-  }
-});
+$(document).ready(function() {
+  
+  $('.photoset-grid-lightbox').photosetGrid({
+    highresLinks: true,
+    rel: 'withhearts-gallery',
+    gutter: '2px',
 
-document.getElementById('nav-block').innerHTML = 'Hello JavaScript';
+    onComplete: function(){
+      $('.photoset-grid-lightbox').attr('style', '');
+      $('.photoset-grid-lightbox a').colorbox({
+        photo: true,
+        scalePhotos: true,
+        maxHeight:'90%',
+        maxWidth:'90%'
+      });
+    }
+  });
+
+}
+
 // $(document).ready(function() {
 
 //   //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
