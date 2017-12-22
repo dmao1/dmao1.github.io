@@ -5,7 +5,7 @@ ul {
   list-style-type: none;
   text-align: center;
   /*padding: 0;*/
-  font-size: 20px; }
+  font-size: 25px; }
 
 ul li {
   display: inline-block;
@@ -20,7 +20,7 @@ a:hover {
   opacity: 0.5; }
 
 #site {
-  padding: 40px; }
+  padding-top: 100px; }
 
 .nav-bar {
   padding-bottom: 50px; }
@@ -31,19 +31,21 @@ a:hover {
   justify-content: center; }
 
 .box {
-  max-width: 100%;
-  max-height: 100%; }
+  max-width: 500px;
+  max-height: 600px;
+  padding: 10px; }
 
 img {
   max-width: 100%;
-  max-height: 100%;
-  /*margin: 20px;*/
-  padding: 10px; }
+  height: auto; }
+
+img:hover {
+  cursor: pointer; }
 
 /*media queries*/
 @media only screen and (max-width: 960px) {
   #site {
     overflow: hidden;
-    padding: 50px; } }
+    padding: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
