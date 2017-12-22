@@ -35,12 +35,18 @@ a:hover {
   max-height: 600px;
   padding: 10px; }
 
-img {
+.box img {
   width: 100%;
   height: auto; }
 
 img:hover {
   cursor: pointer; }
+
+footer {
+  padding-top: 50px; }
+
+#footer {
+  text-align: center; }
 
 /*media queries*/
 @media only screen and (max-width: 960px) {
