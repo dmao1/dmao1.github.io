@@ -1,0 +1,166 @@
+
+body {
+	background-color: #f2f1ef;
+	color: #333;
+	font-family: Arial, Verdana, sans-serif;
+	margin: 0; /* Set to 0, since browsers may give different defaults for body */
+	padding: 0;
+}
+/* Panel Class: Shared Characteristics of #day and #night */
+.panel {
+	width: 50%;
+	height: 100%;
+}
+#day {
+	background-color: #f2f1ef;
+	/* Add Styles Below */
+}
+#night {
+	background-color: #222;
+	top: 0;
+	position: fixed;
+	/* Add Styles Below */
+	right: 0;
+	color: white;
+	transition: 0.7s;
+	-moz-transition: 0.7s;
+	-webkit-transition: 0.7s;
+}
+#night:hover {
+	/* Add Styles Below */
+	width: 97%;
+}
+.container {
+	margin: 200px auto 0 auto;
+	width: 90%;
+}
+.title {
+	font-size: 25px;
+	font-family: "Helvetica Nueue", Helvetica, Arial, Verdana, sans-serif;
+	letter-spacing: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.separator {
+	height: 1px;
+	margin: 20px auto;
+	width: 30%;
+}
+#day .separator {
+	background-color: #aaa;
+}
+#night .separator {
+	background-color: #555;
+}
+
+/*.info {
+	text-align: center;
+}*/
+
+.info .item {
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: 100;
+	letter-spacing: 3px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	/* Add Styles Below */
+	transition: 0.3s;
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+}
+/* Left and Right will have different opacities */
+#day .info .item {
+	/* Add Styles Below */
+	opacity: 0.4;
+}
+#night .info .item {
+	/* Add Styles Below */
+	opacity: 0.2;
+	/*display: inline-block;*/
+
+}
+/* Both Left and Right on Hover will have Opacity of 1 */
+#day .info .item:hover,
+#night .info .item:hover {
+	/* Add Styles Below */
+	opacity: 1;
+}
+.social {
+	margin-top: 150px;
+	text-align: center;
+}
+.social .item {
+	border: 1px solid #444;
+	cursor: pointer;
+	font-size: 12px;
+	letter-spacing: 3px;
+	padding: 6px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 20%;
+	/* Add Styles Below */
+	display: inline-block;
+	/*margin-left: -5px;*/
+	margin: 0px 10px;
+}
+
+#night .social {
+	margin-top: 90px;
+}
+
+/* Left and Right will have different opacities */
+#day .social .item {
+}
+#night .social .item {
+}
+/* Both Left and Right on Hover will have Opacity of 1 */
+#night .social .item:hover {
+	background-color: white;
+	color: black;
+	opacity: 0.7;
+}
+#day .social .item:hover {
+	background-color: #222;
+	color: #f2f2f2;
+	opacity: 0.8;
+}
+#night #arrow {
+	background-color: #f2f1ef;
+	height: 50px;
+	width: 50px;
+	/* Add Styles Below */
+	background-color: #222;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	position: absolute;
+	top: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.fa-camera {
+	color: white;
+	margin-top: 10px;
+}
+
+.portfolio {
+	text-align: center;
+	margin: 10px;
+}
+
+.to-portfolio {
+	/*background-color:#fff;*/
+    border:3px solid white;    
+    height:75px;
+    width:75px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.to-portfolio:hover {
+	opacity: 0.5;
+}
