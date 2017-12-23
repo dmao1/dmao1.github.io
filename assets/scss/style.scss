@@ -1,26 +1,35 @@
+
+/*sass variables*/
 $main-color: grey;
+
+
+/*portfolio page */
 
 header {
 	text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  text-align: center;
-  /*padding: 0;*/
-  font-size: 25px;
+nav {
+
+	ul {
+	  list-style-type: none;
+	  text-align: center;
+	  font-size: 25px;
+	}
+
+	li {
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		letter-spacing: 2px;
+		color: $main-color;
+	}
 }
 
-ul li {
-	display: inline-block;
-	padding-right: 10px;
-}
-
-a {
-	text-decoration: none;
-	letter-spacing: 2px;
-	color: $main-color;
-}
+	
 
 a:hover {
 	opacity: 0.5
@@ -35,18 +44,41 @@ a:hover {
 	padding-bottom: 50px;
 }
 
-.container {
+/*.container {
 	display: flex;
 	flex-direction: row;
     justify-content: center;
+}*/
+
+#thumbnail-wrapper {
+	margin: 60px;
+	margin-top: 30px;
 }
 
+.container { 
+	padding: .5vw;
+	font-size: 0;
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-direction: column;
+	-webkit-flex-flow: row wrap; 
+	flex-flow: row wrap; 
+	display: -webkit-box;
+	display: flex;
+}
 
-
-.box {
+/*.box {
 	max-width: 500px;
 	max-height: 600px;
 	padding: 10px;
+}*/
+
+.box {
+	-webkit-box-flex: auto;
+	-ms-flex: auto;
+	flex: auto; 
+	width: 200px; 
+	margin: .5vw; 
 }
 
 .box img {
@@ -58,12 +90,43 @@ img:hover {
 	cursor: pointer;
 }
 
+/*footer*/
+
 footer {
 	padding-top: 50px;
 }
 
 #footer {
 	text-align: center;
+}
+
+/*back-to-top button */
+
+.back-to-top {
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 70px;
+	height: 70px;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	/*background-color: grey;*/
+
+}
+ 
+ 
+.back-to-top i {
+	font-size: 60px;
+	color: grey;
+	opacity: 0.5;
+}
+
+.back-to-top i:hover {
+	color: red;
 }
 
 /*media queries*/
