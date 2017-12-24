@@ -22,12 +22,14 @@ $(".picture").click(function() {
     $("#overlay").show();
     $(this).addClass("pic-click");
     document.body.style.overflow="hidden";
+    $(".back-to-top").hide();
   });
   
   $("#overlay").click(function() {
     $(this).hide();
     $(".picture").removeClass("pic-click");
     document.body.style.overflow="visible";
+    $(".back-to-top").show();
   })
 
 });
