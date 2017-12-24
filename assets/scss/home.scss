@@ -198,3 +198,45 @@ body {
 #cycler img.active{
 	z-index:3;
 }
+
+/*animations*/
+.to-portfolio {
+  /*margin:100px;*/
+  /*display: block;*/
+  /*width: 22px;*/
+  /*height: 22px;*/
+  /*border-radius: 50%;*/
+  /*background: green;*/
+  /*cursor: pointer;*/
+  box-shadow: 0 0 0 rgba(245, 244, 242, 0.2);
+  animation: pulse 2s infinite;
+}
+.to-portfolio:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.2);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(245, 244, 242, 0.4);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(245, 244, 242, .6);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.2);
+    box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.2);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(245, 244, 242, 0.4);
+      box-shadow: 0 0 0 10px rgba(245, 244, 242, 0.4);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.6);
+      box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.6);
+  }
+}

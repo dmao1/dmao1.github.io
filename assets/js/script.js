@@ -46,14 +46,10 @@ function cycleImages(){
     });
     }
 
-// function test() {
-//   console.log(5 + 6);
-// }
 
+//run every 5 seconds
+setInterval("cycleImages()", 5000);
 
-//run every 7 seconds
-setInterval("cycleImages()", 7000);
-// setInterval("test()", 2000);
  
 
 
