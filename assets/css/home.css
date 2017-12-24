@@ -99,7 +99,7 @@ body {
   width: 20%;
   /* Add Styles Below */
   display: inline-block;
-  /*margin-left: -5px;*/
+  margin-left: -5px;
   margin: 0px 10px; }
 
 #night .social {
@@ -110,7 +110,7 @@ body {
 #night .social .item:hover {
   background-color: white;
   color: black;
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 #day .social .item:hover {
   background-color: #222;
@@ -134,6 +134,12 @@ body {
 .fa-camera {
   color: white;
   margin-top: 10px; }
+
+.fa-instagram {
+  color: grey; }
+
+.fa-linkedin {
+  color: grey; }
 
 .portfolio {
   text-align: center;
