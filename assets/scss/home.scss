@@ -173,3 +173,16 @@ body {
 .to-portfolio:hover {
 	opacity: 0.5;
 }
+
+#cycler{
+	position:relative;
+}
+
+#cycler img{
+	position:absolute;
+	z-index:1
+}
+
+#cycler img.active{
+	z-index:3
+}

@@ -12,16 +12,34 @@ $(window).scroll(function() {
   }
 });
  
- 
- 
 $(".back-to-top").click(function(event) {
   event.preventDefault();
   $("html, body").animate({scrollTop: 0}, duration);  
 return false;
 })
- 
 });
 
+function cycleImages(){
+    $(".cycler").each(function(){
+      var $active = $(this).find(".active");
+      var $next = ($(this).find(".active").next().length > 0) ? $(this).find(".active").next() : $(this).find("img:first");
+      $next.css("z-index",2);//move the next image up the pile
+      $active.fadeOut(1500,function(){//fade out the top image
+        $active.css("z-index",1).show().removeClass("active");//reset the z-index and unhide the image
+        $next.css("z-index",3).addClass("active");//make the next image the top one
+      });
+    });
+    }
+
+function test() {
+  console.log(5 + 6);
+}
+
+
+//run every 7 seconds
+setInterval("cycleImages()", 2000);
+setInterval("test()", 2000);
+ 
 
 
 
