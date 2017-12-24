@@ -164,12 +164,13 @@ img:hover {
 
 .picture:hover {
 	cursor: pointer;
+	opacity: 0.8;
 }
 
 .pic-click {
 	position: fixed;
 	z-index: 21;
-	width: 75%;
+	width: 60%;
 	top: 50%;
 	left: 50%;
 	transform:translate(-50%,-50%);
@@ -195,7 +196,7 @@ img:hover {
     cursor: pointer;
     font-size: 12px;
     letter-spacing: 3px;
-    padding: 6px 15px;
+    padding: 6px 25px;
     text-align: center;
     /*text-transform: uppercase;*/
     /*width: 20%;*/
