@@ -149,22 +149,14 @@ img:hover {
 	cursor: pointer;
 	position: relative;
 	display: block;
-	/*margin: 20px auto;*/
-	/*width: 80%;*/
-	/*min-width: 50%;*/
 	width: 100%;
     height: auto;
-
-
-	animation: fadein 1s;
-    -moz-animation: fadein 1s; /* Firefox */
-    -webkit-animation: fadein 1s; /* Safari and Chrome */
-    -o-animation: fadein 1s; /* Opera */
+    transition: .4s ease-in-out;
 }
 
 .picture:hover {
 	cursor: pointer;
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 
 .pic-click {
@@ -240,52 +232,3 @@ img:hover {
 	    padding: 30px;
 	}
 }
-
-/*animations*/
-.fa-camera {
-  /*margin:100px;*/
-  /*display: block;*/
-  /*width: 22px;*/
-  /*height: 22px;*/
-  /*border-radius: 50%;*/
-  /*background: green;*/
-  /*cursor: pointer;*/
-  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-  animation: pulse 2s infinite;
-}
-.fa-camera:hover {
-  animation: none;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-  }
-  70% {
-      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-  }
-  100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
-  }
-  70% {
-      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-  }
-  100% {
-      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-  }
-}
-
-    
-
-
-
-
-
