@@ -20,7 +20,7 @@ return false;
 });
 
 function cycleImages(){
-    $(".cycler").each(function(){
+    $("#cycler").each(function(){
       var $active = $(this).find(".active");
       var $next = ($(this).find(".active").next().length > 0) ? $(this).find(".active").next() : $(this).find("img:first");
       $next.css("z-index",2);//move the next image up the pile
@@ -31,14 +31,14 @@ function cycleImages(){
     });
     }
 
-function test() {
-  console.log(5 + 6);
-}
+// function test() {
+//   console.log(5 + 6);
+// }
 
 
 //run every 7 seconds
-setInterval("cycleImages()", 2000);
-setInterval("test()", 2000);
+setInterval("cycleImages()", 7000);
+// setInterval("test()", 2000);
  
 
 

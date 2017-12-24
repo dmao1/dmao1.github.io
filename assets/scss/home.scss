@@ -25,6 +25,7 @@ body {
 	transition: 0.7s;
 	-moz-transition: 0.7s;
 	-webkit-transition: 0.7s;
+	z-index: 100
 }
 #night:hover {
 	/* Add Styles Below */
@@ -52,6 +53,10 @@ body {
 #night .separator {
 	background-color: #555;
 }
+
+/*#day .continer {
+	position: absolute;
+}*/
 
 /*.info {
 	text-align: center;
@@ -180,9 +185,14 @@ body {
 
 #cycler img{
 	position:absolute;
-	z-index:1
+	z-index:1;
+	height: auto;
+	width: 100%;
+	left:25%;
+	top:25%;
+	transform:translate(-25%,-25%);
 }
 
 #cycler img.active{
-	z-index:3
+	z-index:3;
 }
