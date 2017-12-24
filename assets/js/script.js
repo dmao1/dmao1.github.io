@@ -17,6 +17,19 @@ $(".back-to-top").click(function(event) {
   $("html, body").animate({scrollTop: 0}, duration);  
 return false;
 })
+
+$(".picture").click(function() {
+    $("#overlay").show();
+    $(this).addClass("pic-click");
+    document.body.style.overflow="hidden";
+  });
+  
+  $("#overlay").click(function() {
+    $(this).hide();
+    $(".picture").removeClass("pic-click");
+    document.body.style.overflow="visible";
+  })
+
 });
 
 function cycleImages(){

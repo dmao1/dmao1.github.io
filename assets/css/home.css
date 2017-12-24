@@ -22,9 +22,9 @@ body {
   /* Add Styles Below */
   right: 0;
   color: white;
-  transition: 0.7s;
-  -moz-transition: 0.7s;
-  -webkit-transition: 0.7s;
+  transition: 0.6s;
+  -moz-transition: 0.6s;
+  -webkit-transition: 0.6s;
   z-index: 100; }
 
 #night:hover {
@@ -79,15 +79,11 @@ body {
 
 #night .info .item {
   /* Add Styles Below */
-  opacity: 0.2;
+  opacity: 0.5;
   /*display: inline-block;*/ }
 
 /* Both Left and Right on Hover will have Opacity of 1 */
 #day .info .item:hover,
-#night .info .item:hover {
-  /* Add Styles Below */
-  opacity: 1; }
-
 .social {
   margin-top: 150px;
   text-align: center; }

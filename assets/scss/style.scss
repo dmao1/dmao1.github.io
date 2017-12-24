@@ -76,11 +76,27 @@ a:hover {
 	cursor: pointer;
 }
 
-/*.container {
-	display: flex;
-	flex-direction: row;
-    justify-content: center;
-}*/
+#overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	top: 0px;
+	left: 0px;
+	z-index: 20;
+}
+
+#close {
+	position: fixed;
+	width: 20px;
+	top: 20px;
+	right: 20px;
+}
+
+#close:hover {
+	cursor: pointer;
+}
 
 .tag-line {
 	opacity: 0.4;
@@ -120,13 +136,47 @@ a:hover {
 	margin: .5vw; 
 }
 
-.box img {
+/*.box img {
     width: 100%;
     height: auto;
 }
 
 img:hover {
 	cursor: pointer;
+}*/
+
+.picture {
+	cursor: pointer;
+	position: relative;
+	display: block;
+	/*margin: 20px auto;*/
+	/*width: 80%;*/
+	/*min-width: 50%;*/
+	width: 100%;
+    height: auto;
+
+
+	animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+.picture:hover {
+	cursor: pointer;
+}
+
+.pic-click {
+	position: fixed;
+	z-index: 21;
+	width: 75%;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+.pic-click:hover {
+	cursor: default;
 }
 
 /*footer*/
