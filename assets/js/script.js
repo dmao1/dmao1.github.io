@@ -36,27 +36,24 @@ function divSwitch() {
    $('#people-btn').click(function() {
         $('.thumbnail-wrapper').hide();
         $('#people-content').show();
-        console.log("ppl")
     });
     $('#places-btn').click(function() {
         $('.thumbnail-wrapper').hide();
         $('#places-content').show();
-        console.log("places")
     });
     $('#food-btn').click(function() {
         $('.thumbnail-wrapper').hide();
         $('#food-content').show();
-        console.log("food")
     });
 }
 
 $(".item").click(function() {
+  divSwitch();
   if ($(this).hasClass("clicked")) {
   } else {
     $(".item").removeClass("clicked");
     $(this).addClass("clicked");
   }
-  divSwitch();
 });
  
 
