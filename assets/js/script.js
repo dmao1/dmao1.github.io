@@ -32,28 +32,50 @@ $(".picture").click(function() {
     $(".back-to-top").show();
   })
 
-function divSwitch() {
-   $('#people-btn').click(function() {
-        $('.thumbnail-wrapper').hide();
-        $('#people-content').show();
-    });
-    $('#places-btn').click(function() {
-        $('.thumbnail-wrapper').hide();
-        $('#places-content').show();
-    });
-    $('#food-btn').click(function() {
-        $('.thumbnail-wrapper').hide();
-        $('#food-content').show();
-    });
-}
+// function divSwitch() {
+//    $('#people-btn').click(function() {
+//         // $('.thumbnail-wrapper').hide();
+//         // $('#people-content').show();
+//         $('.thumbnail-wrapper').css("display", "none");
+//         $('#people-content').css("display", "block");
+//     });
+//     $('#places-btn').click(function() {
+//         // $('.thumbnail-wrapper').hide();
+//         // $('#places-content').show();
+//         $('.thumbnail-wrapper').css("display", "none");
+//         $('#places-content').css("display", "block");
+//     });
+//     $('#food-btn').click(function() {
+//         // $('.thumbnail-wrapper').hide();
+//         // $('#food-content').show();
+//         $('.thumbnail-wrapper').css("display", "none");
+//         $('#food-content').css("display", "block");
+//     });
+// }
 
 $(".item").click(function() {
-  divSwitch();
   if ($(this).hasClass("clicked")) {
   } else {
     $(".item").removeClass("clicked");
     $(this).addClass("clicked");
   }
+  // console.log($(this).children("span").attr("id") == "places-btn");
+  // divSwitch();
+  var isPeople = $(this).children("span").attr("id") == "people-btn"
+  var isPlaces = $(this).children("span").attr("id") == "places-btn"
+  var isFood =$(this).children("span").attr("id") == "food-btn"
+
+
+  if (isPeople) {
+        $('.thumbnail-wrapper').css("display", "none");
+        $('#people-content').css("display", "block");
+    } else if (isPlaces) {
+        $('.thumbnail-wrapper').css("display", "none");
+        $('#places-content').css("display", "block");
+    } else {
+        $('.thumbnail-wrapper').css("display", "none");
+        $('#food-content').css("display", "block");
+    }
 });
  
 

@@ -98,7 +98,10 @@ nav a:hover {
 .thumbnail-wrapper {
   margin: 60px;
   margin-top: 30px;
-  /*display: none;*/ }
+  display: none; }
+
+#people-content {
+  display: block; }
 
 .container {
   padding: .5vw;
