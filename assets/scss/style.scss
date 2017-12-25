@@ -55,8 +55,20 @@ nav {
 	padding-top: 100px;
 }
 
+.profile-img {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.profile-img:hover {
+	opacity: 0.5;
+}
+
 .profile-img img {
 	border-radius: 50%;
+	width: 100%;
+	height: auto;
 }
 
 /*when clicking the nav items*/
