@@ -32,6 +32,34 @@ $(".picture").click(function() {
     $(".back-to-top").show();
   })
 
+function divSwitch() {
+   $('#people-btn').click(function() {
+        $('.thumbnail-wrapper').hide();
+        $('#people-content').show();
+        console.log("ppl")
+    });
+    $('#places-btn').click(function() {
+        $('.thumbnail-wrapper').hide();
+        $('#places-content').show();
+        console.log("places")
+    });
+    $('#food-btn').click(function() {
+        $('.thumbnail-wrapper').hide();
+        $('#food-content').show();
+        console.log("food")
+    });
+}
+
+$(".item").click(function() {
+  if ($(this).hasClass("clicked")) {
+  } else {
+    $(".item").removeClass("clicked");
+    $(this).addClass("clicked");
+  }
+  divSwitch();
+});
+ 
+
 });
 
 function cycleImages(){
@@ -40,8 +68,8 @@ function cycleImages(){
       var $next = ($(this).find(".active").next().length > 0) ? $(this).find(".active").next() : $(this).find("img:first");
       $next.css("z-index",2);//move the next image up the pile
       $active.fadeOut(1500,function(){//fade out the top image
-        $active.css("z-index",1).show().removeClass("active");//reset the z-index and unhide the image
-        $next.css("z-index",3).addClass("active");//make the next image the top one
+      $active.css("z-index",1).show().removeClass("active");//reset the z-index and unhide the image
+      $next.css("z-index",3).addClass("active");//make the next image the top one
       });
     });
     }

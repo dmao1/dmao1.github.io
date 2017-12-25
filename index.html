@@ -4,17 +4,12 @@
 	<title>Photography Portfolio</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <script type="text/javascript" src="assets/js/jquery.colorbox.js"></script> -->
-	<!-- <script type="text/javascript" src="assets/js/jquery.photoset-grid.min.js"></script> -->
 	<script type="text/javascript" src="assets/js/script.js"></script>
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/main.css"/> -->
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/colorbox.css"/> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
 	<div id="site">
 		<div id="canvas">
-			<!-- / headerWrapper start -->
 			<div id="overlay">
 				<img class="button" id="close" src="assets/img/close.png">
 			</div>
@@ -33,16 +28,16 @@
 							<nav class="nav-bar">
 								<ul>
 									<li class="item">
-										<a href="home.html">Home</a>
+										<a class="home" href="home.html">Home</a>
 									</li>
 									<li class="item">
-										<a href="/">People</a>
+										<span id="people-btn">People</span>
 									</li>
 									<li class="item">
-										<a href="/">Places</a>
+										<span id="places-btn">places</span>
 									</li>
 									<li class="item">
-										<a href="/">Food</a>
+										<span id="food-btn">food</span>
 									</li>
 								</ul>
 							</nav>
@@ -55,26 +50,46 @@
 			<!-- / pageWrapper start -->
 			<div id="page-wrapper" class="feed">
 				<section id="page">
-						<div id="thumbnail-wrapper">
-							<!-- / container start -->
+						<!-- people content start -->
+						<div id="people-content" class="thumbnail-wrapper">
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/people/people1.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/people/people7.jpg"></div>
+							</div>	
+							
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/people/people3.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/people/people4.jpg"></div>
+							</div>
 
-							<!-- <div class="container">
-								
-								<div class="row">
-									<div class="col"><img src="assets/img/withhearts1-500px.jpg"></div>
-									<div class="col"><img src="assets/img/withhearts2-500px.jpg"></div>
-								</div>
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/people/people5.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/people/people6.jpg"></div>
+							</div>			
+							<!-- people content end -->					
+						</div>
 
-								<div class="row">
-									<div class="col"><img src="assets/img/withhearts3-500px.jpg"></div>
-									<div class="col"><img src="assets/img/withhearts4-500px.jpg"></div>
-								</div>
+						<!-- places content start -->
+						<div id="places-content" class="thumbnail-wrapper" style="display: none">
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/places/places1.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/places/places2.jpg"></div>
+							</div>	
+							
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/places/places3.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/places/places4.jpg"></div>
+							</div>
 
-								<div class="row">
-									<div class="col"><img src="assets/img/withhearts5-500px.jpg"></div>
-									<div class="col"><img src="assets/img/withhearts6-500px.jpg"></div>
-								</div>
-							</div> -->			
+							<div class="container">
+								<div class="box"><img class="picture" src="assets/img/places/places5.jpg"></div>
+								<div class="box"><img class="picture" src="assets/img/places/places6.jpg"></div>
+							</div>			
+							<!-- places content end -->					
+						</div>
+
+						<!-- food content start -->
+						<div id="food-content" class="thumbnail-wrapper" style="display: none">
 							<div class="container">
 								<div class="box"><img class="picture" src="assets/img/food/food1.jpg"></div>
 								<div class="box"><img class="picture" src="assets/img/food/food2.jpg"></div>
@@ -88,9 +103,8 @@
 							<div class="container">
 								<div class="box"><img class="picture" src="assets/img/food/food5.jpg"></div>
 								<div class="box"><img class="picture" src="assets/img/food/food6.jpg"></div>
-							</div>
-										
-							<!-- / container end -->					
+							</div>			
+							<!-- food content end -->					
 						</div>
 				</section>
 			</div>

@@ -21,12 +21,22 @@ nav {
 	li {
 		display: inline-block;
 		padding-right: 10px;
+		letter-spacing: 2px;
+		color: $main-color;
+	}
+
+	li span:hover {
+		opacity: 0.5
 	}
 
 	a {
 		text-decoration: none;
 		letter-spacing: 2px;
 		color: $main-color;
+	}
+
+	a:hover {
+		opacity: 0.5
 	}
 }
 
@@ -40,11 +50,6 @@ nav {
 	margin: 0 auto;
     width: 90%;
 }
-	
-
-a:hover {
-	opacity: 0.5
-}
 
 #site {
 	padding-top: 100px;
@@ -52,6 +57,11 @@ a:hover {
 
 .profile-img img {
 	border-radius: 50%;
+}
+
+/*when clicking the nav items*/
+.clicked {
+	opacity: 0.5;
 }
 
 .nav-bar {
@@ -81,7 +91,7 @@ a:hover {
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.75);
+	background: rgba(0, 0, 0, 0.9);
 	top: 0px;
 	left: 0px;
 	z-index: 20;
@@ -105,10 +115,12 @@ a:hover {
 	font-weight: 100px;
 }
 
-#thumbnail-wrapper {
+.thumbnail-wrapper {
 	margin: 60px;
 	margin-top: 30px;
+	/*display: none;*/
 }
+
 
 .container { 
 	padding: .5vw;
@@ -121,12 +133,6 @@ a:hover {
 	display: -webkit-box;
 	display: flex;
 }
-
-/*.box {
-	max-width: 500px;
-	max-height: 600px;
-	padding: 10px;
-}*/
 
 .box {
 	-webkit-box-flex: auto;
@@ -172,7 +178,7 @@ img:hover {
 	cursor: default;
 }
 
-/*footer*/
+/*social*/
 
 .social-container {
 	/*padding-top: 50px;*/
@@ -210,10 +216,8 @@ img:hover {
 	display: none;
 	text-decoration: none;
 	color: #ffffff;
-	/*background-color: grey;*/
 
 }
- 
  
 .back-to-top i {
 	font-size: 60px;
