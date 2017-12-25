@@ -166,6 +166,7 @@ img:hover {
 }
 
 .pic-click {
+	transition: .6s ease-in-out;
 	position: fixed;
 	z-index: 21;
 	width: 60%;
