@@ -3,13 +3,22 @@ $(document).ready(function() {
 	var offset = 500;
 	var duration = 300;
 
-	// lazy loading
-    $(".lazy").Lazy({
-    	scrollDirection: "vertical",
-    	effect: "fadeIn",
-    	visibleOnly: true
-    });
-    // lazy loading
+	// // lazy loading
+ //    $(".lazy").Lazy({
+ //    	scrollDirection: "vertical",
+ //    	effect: "fadeIn",
+ //    	visibleOnly: true
+ //    });
+ //    // lazy loading
+
+ 	// $(function() {
+  //       $('.lazy').Lazy({
+  //       	scrollDirection: "vertical",
+  //   		effect: "fadeIn",
+  //   		visibleOnly: true
+  //       });
+  //   });
+  	
  
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > offset) {
