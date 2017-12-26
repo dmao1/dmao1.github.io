@@ -173,7 +173,7 @@ img:hover {
 	display: block;
 	height: auto;
     width: 100%;
-    /*transition: .4s ease-in-out;*/
+    transition: .4s ease-in-out;
 }
 
 .picture:hover {
@@ -182,7 +182,7 @@ img:hover {
 }
 
 .pic-click {
-	/*transition: .6s ease-in-out;*/
+	transition: .6s ease-in-out;
 	position: fixed;
 	z-index: 21;
 	max-width: 60%;
