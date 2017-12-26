@@ -171,9 +171,9 @@ img:hover {
 	cursor: pointer;
 	position: relative;
 	display: block;
-	width: 100%;
-    height: auto;
-    transition: .4s ease-in-out;
+	height: auto;
+    width: 100%;
+    /*transition: .4s ease-in-out;*/
 }
 
 .picture:hover {
@@ -182,10 +182,11 @@ img:hover {
 }
 
 .pic-click {
-	transition: .6s ease-in-out;
+	/*transition: .6s ease-in-out;*/
 	position: fixed;
 	z-index: 21;
-	width: 60%;
+	max-width: 60%;
+	height: auto;
 	top: 50%;
 	left: 50%;
 	transform:translate(-50%,-50%);
