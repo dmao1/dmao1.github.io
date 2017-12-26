@@ -130,6 +130,10 @@ nav a:hover {
 img:hover {
 	cursor: pointer;
 }*/
+/*.oversize {*/
+/*	height: auto;
+	width: 200px;
+}*/
 .picture {
   cursor: pointer;
   position: relative;
@@ -179,14 +183,12 @@ img:hover {
 .social .item:hover {
   opacity: 0.5; }
 
-.social-icon i.fa {
-  background-color: black;
-  display: inline-block;
-  border-radius: 50%;
-  /*box-shadow: 0px 0px 2px #888;*/
-  /*padding: 0.5em 0.6em;*/
-  padding: 12px 12px; }
-
+/*.social-icon i.fa {
+ 	background-color: black;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 12px 12px;
+}*/
 /*back-to-top button */
 .back-to-top {
   background: none;
