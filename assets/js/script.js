@@ -16,7 +16,7 @@ $(".back-to-top").click(function(event) {
   event.preventDefault();
   $("html, body").animate({scrollTop: 0}, duration);  
 return false;
-})
+});
 
 $(".picture").click(function() {
     $("#overlay").show();
@@ -30,28 +30,7 @@ $(".picture").click(function() {
     $(".picture").removeClass("pic-click");
     document.body.style.overflow="visible";
     $(".back-to-top").show();
-  })
-
-// function divSwitch() {
-//    $('#people-btn').click(function() {
-//         // $('.thumbnail-wrapper').hide();
-//         // $('#people-content').show();
-//         $('.thumbnail-wrapper').css("display", "none");
-//         $('#people-content').css("display", "block");
-//     });
-//     $('#places-btn').click(function() {
-//         // $('.thumbnail-wrapper').hide();
-//         // $('#places-content').show();
-//         $('.thumbnail-wrapper').css("display", "none");
-//         $('#places-content').css("display", "block");
-//     });
-//     $('#food-btn').click(function() {
-//         // $('.thumbnail-wrapper').hide();
-//         // $('#food-content').show();
-//         $('.thumbnail-wrapper').css("display", "none");
-//         $('#food-content').css("display", "block");
-//     });
-// }
+  });
 
 $(".item").click(function() {
   if ($(this).hasClass("clicked")) {
@@ -89,9 +68,9 @@ function cycleImages(){
       $active.fadeOut(1500,function(){//fade out the top image
       $active.css("z-index",1).show().removeClass("active");//reset the z-index and unhide the image
       $next.css("z-index",3).addClass("active");//make the next image the top one
-      });
     });
-    }
+  });
+}
 
 
 //run every 5 seconds
