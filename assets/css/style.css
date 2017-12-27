@@ -77,6 +77,7 @@ nav a:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
+  /*background: rgba(0, 0, 0, 1);*/
   top: 0px;
   left: 0px;
   z-index: 20; }
@@ -89,6 +90,36 @@ nav a:hover {
 
 #close:hover {
   cursor: pointer; }
+
+/*
+#page {
+	position: relative;
+}*/
+#arrow-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 22; }
+
+.fa-arrow-circle-left {
+  position: relative;
+  right: 35vw;
+  opacity: 0.4; }
+
+.fa-arrow-circle-right {
+  position: relative;
+  left: 35vw;
+  opacity: 0.4; }
+
+.fa-arrow-circle-left:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.fa-arrow-circle-right:hover {
+  cursor: pointer;
+  opacity: 1; }
 
 .tag-line {
   opacity: 0.4;
@@ -129,7 +160,7 @@ nav a:hover {
 
 img:hover {
 	cursor: pointer;
-}*/
+}
 /*.oversize {*/
 /*	height: auto;
 	width: 200px;
