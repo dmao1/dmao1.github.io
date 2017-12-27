@@ -225,6 +225,12 @@ img:hover {
 .social .item:hover {
   opacity: 0.5; }
 
+.fa-instagram {
+  color: grey; }
+
+.fa-envelope {
+  color: grey; }
+
 /*.social-icon i.fa {
  	background-color: black;
 	display: inline-block;
