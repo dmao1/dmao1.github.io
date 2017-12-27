@@ -33,11 +33,17 @@ $(document).ready(function() {
 		$(".left-arr").click(function() {
 			if (clicked.prev()) 
 			{
-				alert("out of pics fam")
+				clicked.removeClass("pic-click");
+
+				var contentTypeId = clicked.parent().parent().parent().attr("id");
+
+				console.log(contentType == "people-content");
+
+				// clicked.next(".picture").addClass("pic-click");
 			} 
 			else 
 			{
-				alert("out of pics fam")
+				
 			}
 		});
 	});
