@@ -6,6 +6,7 @@ body {
 	margin: 0; /* Set to 0, since browsers may give different defaults for body */
 	padding: 0;
 }
+
 /* Panel Class: Shared Characteristics of #day and #night */
 .panel {
 	width: 50%;
@@ -83,9 +84,12 @@ body {
 #night .info .item {
 	/* Add Styles Below */
 	opacity: 0.5;
-	/*display: inline-block;*/
-
 }
+
+/*#email {
+	letter-spacing: 0px;
+}*/
+
 /* Both Left and Right on Hover will have Opacity of 1 */
 #day .info .item:hover,
 
@@ -99,14 +103,14 @@ body {
 	text-align: center;
 }
 .social .item {
-	border: 1px solid #444;
+	/*border: 1px solid #444;*/
 	cursor: pointer;
 	font-size: 12px;
 	letter-spacing: 3px;
 	padding: 6px 15px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 20%;
+	width: 5%;
 	/* Add Styles Below */
 	display: inline-block;
 	margin-left: -5px;
@@ -114,25 +118,22 @@ body {
 }
 
 #night .social {
-	margin-top: 90px;
+	margin-top: 50px;
 }
 
 /* Left and Right will have different opacities */
 #day .social .item {
 }
 #night .social .item {
+	opacity: 0.6;
 }
 /* Both Left and Right on Hover will have Opacity of 1 */
 #night .social .item:hover {
-	background-color: white;
-	color: black;
-	opacity: 0.8;
+	/*background-color: white;*/
+	color: white;
+	opacity: 1.0;
 }
-#day .social .item:hover {
-	background-color: #222;
-	color: #f2f2f2;
-	opacity: 0.8;
-}
+
 #night #arrow {
 	background-color: #f2f1ef;
 	height: 50px;
@@ -154,11 +155,11 @@ body {
 }
 
 .fa-instagram {
-	color: grey;
+	color: white;
 }
 
-.fa-linkedin {
-	color: grey;
+.fa-envelope {
+	color: white;
 }
 
 
@@ -169,16 +170,23 @@ body {
 
 .to-portfolio {
 	/*background-color:#fff;*/
-    border:3px solid white;    
-    height:75px;
-    width:75px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+    border:2px solid white;    
+    height:24px;
+    width:150px;
+    display: inline-block;
+    padding-top: 5px;
+    /*border-radius:50%;*/
+    /*-moz-border-radius:50%;*/
+    /*-webkit-border-radius:50%;*/
+    text-transform: uppercase;	
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
 }
 
 .to-portfolio:hover {
 	opacity: 0.5;
+	/*animation: none;*/
 }
 
 #cycler{
@@ -200,15 +208,14 @@ body {
 }
 
 /*animations*/
-.to-portfolio {
+
+/*.to-portfolio {
   box-shadow: 0 0 0 rgba(245, 244, 242, 0.2);
   animation: pulse 2s infinite;
-}
-.to-portfolio:hover {
-  animation: none;
-}
+}*/
 
-@-webkit-keyframes pulse {
+
+/*@-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.2);
   }
@@ -232,4 +239,4 @@ body {
       -moz-box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.6);
       box-shadow: 0 0 0 0 rgba(245, 244, 242, 0.6);
   }
-}
+}*/

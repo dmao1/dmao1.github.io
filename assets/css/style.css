@@ -1,4 +1,8 @@
 /*sass variables*/
+/*fonts*/
+@font-face {
+  font-family: "October Twilight";
+  src: url("fonts/October Twilight - OTF.otf") format("opentype"); }
 /*portfolio page */
 header {
   text-align: center; }
@@ -30,6 +34,13 @@ nav a:hover {
   text-transform: uppercase;
   margin: 0 auto;
   width: 95%; }
+
+.logo {
+  font-family: 'October Twilight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  text-transform: none; }
 
 #site {
   padding-top: 80px; }
