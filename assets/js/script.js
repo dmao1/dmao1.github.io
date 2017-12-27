@@ -37,9 +37,9 @@ $(document).ready(function() {
 
 				var contentTypeId = clicked.parent().parent().parent().attr("id");
 
-				console.log(contentType == "people-content");
+				// console.log(contentTypeId == "people-content");
 
-				// clicked.next(".picture").addClass("pic-click");
+				clicked.next(".picture").addClass("pic-click");
 			} 
 			else 
 			{
