@@ -119,6 +119,7 @@ body {
 
 /* Left and Right will have different opacities */
 #night .social .item {
+  transition: all 0.25s ease;
   opacity: 0.6; }
 
 /* Both Left and Right on Hover will have Opacity of 1 */
@@ -157,6 +158,7 @@ body {
 
 .to-portfolio {
   /*background-color:#fff;*/
+  opacity: 0.5;
   border: 2px solid white;
   height: 24px;
   width: 150px;
@@ -171,7 +173,7 @@ body {
   letter-spacing: 3px; }
 
 .to-portfolio:hover {
-  opacity: 0.5;
+  opacity: 1;
   /*animation: none;*/ }
 
 #cycler {

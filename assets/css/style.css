@@ -213,7 +213,9 @@ img:hover {
   padding: 0; }
 
 .social .item {
+  transition: all 0.25s ease;
   /*border: 1px solid #444;*/
+  opacity: 0.6;
   cursor: pointer;
   /*font-size: 12px;*/
   letter-spacing: 3px;
@@ -225,7 +227,7 @@ img:hover {
   margin-left: -5px; }
 
 .social .item:hover {
-  opacity: 0.5; }
+  opacity: 1; }
 
 .fa-instagram {
   color: grey; }
