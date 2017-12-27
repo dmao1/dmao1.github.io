@@ -7,6 +7,12 @@ body {
 	padding: 0;
 }
 
+/*fonts*/
+@font-face {
+	font-family: "October Twilight";
+	src: url("fonts/October Twilight - OTF.otf") format("opentype"),
+}
+
 /* Panel Class: Shared Characteristics of #day and #night */
 .panel {
 	width: 50%;
@@ -37,11 +43,18 @@ body {
 	width: 90%;
 }
 .title {
-	font-size: 25px;
-	font-family: "Helvetica Nueue", Helvetica, Arial, Verdana, sans-serif;
-	letter-spacing: 5px;
+	/*font-size: 25px;*/
+	/*font-family: "Helvetica Nueue", Helvetica, Arial, Verdana, sans-serif;*/
+	/*letter-spacing: 5px;*/
 	text-align: center;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+	letter-spacing: 5px;
+	font-family:'October Twilight', Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 40px;
+	text-transform: none;
+
 }
 .separator {
 	height: 1px;
@@ -65,7 +78,7 @@ body {
 
 .info .item {
 	/*cursor: pointer;*/
-	font-size: 12px;
+	font-size: 8px;
 	font-weight: 100;
 	letter-spacing: 3px;
 	padding: 10px 0;

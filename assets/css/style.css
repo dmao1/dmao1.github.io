@@ -56,7 +56,9 @@ nav a:hover {
 .profile-img img {
   border-radius: 50%;
   width: 100%;
-  height: auto; }
+  height: auto;
+  border: 1px solid grey;
+  /*box-shadow: */ }
 
 /*when clicking the nav items*/
 .clicked {
