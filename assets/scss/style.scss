@@ -1,6 +1,6 @@
 
 /*sass variables*/
-$main-color: grey;
+$main-color: dark-grey;
 
 /*fonts*/
 @font-face {
@@ -30,19 +30,19 @@ nav {
 		color: $main-color;
 	}
 
-	li span:hover {
+	/*li span:hover {
 		opacity: 0.5
 	}
-
+*/
 	a {
 		text-decoration: none;
 		letter-spacing: 2px;
 		color: $main-color;
 	}
 
-	a:hover {
+	/*a:hover {
 		opacity: 0.5
-	}
+	}*/
 }
 
 #canvas {
@@ -61,6 +61,7 @@ nav {
 	font-style: normal;
 	font-size: 40px;
 	text-transform: none;
+	color: grey;
 }
 
 #site {
@@ -109,7 +110,7 @@ nav {
 }
 
 .nav-bar .item:hover {
-	opacity: 1;
+	/*opacity: 1;*/
 	cursor: pointer;
 }
 
@@ -322,7 +323,7 @@ img:hover {
 }
 
 .back-to-top i:hover {
-	color: red;
+	color: black;
 }
 
 /*media queries*/
