@@ -227,10 +227,12 @@ img:hover {
   /*text-transform: uppercase;*/
   /*width: 20%;*/
   display: inline-block;
-  margin-left: -5px; }
+  margin-left: -5px;
+  opacity: 0.5;
+  transition: all 0.5s ease; }
 
 .social .item:hover {
-  opacity: 0.5; }
+  opacity: 1; }
 
 .fa-instagram {
   color: grey; }

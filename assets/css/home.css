@@ -119,7 +119,8 @@ body {
 
 /* Left and Right will have different opacities */
 #night .social .item {
-  opacity: 0.6; }
+  opacity: 0.6;
+  transition: all 0.5s ease; }
 
 /* Both Left and Right on Hover will have Opacity of 1 */
 #night .social .item:hover {
